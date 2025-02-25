@@ -11,8 +11,8 @@ public class Monster
     return myName;
   }
 
-  public String kill(){
-    return myName + " killed a victim.  Screams were heard.\n";
+  public String party(){
+    return myName + " invited a victim.  Slippery screams were heard.\n";
   }
 
   public String toString() {
