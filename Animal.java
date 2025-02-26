@@ -22,8 +22,17 @@ public class Animal
 	     */
 	    public Animal()
 	    {
+			age = 0;
+			alive = true;
+			sound = "Animal Sound";
 
 	    }
+
+		public Aniaml(int age, boolean alive, String sound){
+			this.age=age;
+			this.alive=alive;
+			this.sound=sound;
+		}
 
 	    /**
 	    * Check whether the animal is alive or not.
@@ -31,7 +40,7 @@ public class Animal
 	    */
         public boolean isAlive()
     	{
-
+			return alive;
     	}
 
      	/**
@@ -39,7 +48,8 @@ public class Animal
      	*/
      	public void kill()
      	{
-
+			alive = false;
+			System.out.println(" Sometimes we gotta do what we gotta do");
      	}
 
      	/**
@@ -48,8 +58,13 @@ public class Animal
      	*/
      	public String speak()
      	{
-     		return "";
+     		return "" + sound;
      	}
+
+
+		public void getOlder(){
+			age++;
+		}
 
      	/**
      	* If you attempt to print the animal, if the animal is alive print its age and have it make
@@ -58,6 +73,12 @@ public class Animal
      	*/
      	public String toString()
      	{
-     		return "";
+
+			if(alive == false)
+			{
+				return "The animal was " + age + "years old when it went to a small beautiful farm in Nebraska";
+			}
+
+			else return "The animal is " + age + ". " + sound;
      	}
 }

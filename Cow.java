@@ -14,10 +14,11 @@
 public class Cow extends Animal
 {
 
-    public Cow()
-    {
-
+    public Cow(){
+        super();
     }
+
+    
 
 
 }

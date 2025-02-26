@@ -5,7 +5,14 @@ public class LateNightShowHost extends Monster {
     }
 
     public String party(){
-        return "";
+        return "\nBAHAHHAHAH *Insert intense Jazz Band Music";
     }
 
+    public String gossip(){
+        return "\nYou know...I found this about you from TMZ";
+    }
+
+    public String toString(){
+        return "\nWelcome to my LATE NIGHT SHOW MWAHAHAH!";
+    }
 }
